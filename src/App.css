@@ -6,11 +6,15 @@
     height: 10vh;
 }
 
-#content-body {
+.content-body {
     height: 80vh;
 }
 
 #content-footer {
     height: 10vh;
     background: black;
+}
+
+.body-main-header {
+    text-transform: uppercase;
 }
