@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { ProductCard } from '../components/ProductCard';
 
 export const Storefront = ({ locations }) => {
     const [selectedStorefront, setSelectedStorefront] = useState('');
@@ -34,6 +35,11 @@ export const Storefront = ({ locations }) => {
                     {/* display top row with search, storefront select, filter options */}
           
                     {/* display product cards */}
+                    <div className='row'>
+                        {storefront.products.map((el) => {
+                            return <ProductCard product={el}/>
+                        })}
+                    </div>
 
                     {/* on click product card - display modal pop out for product with button to add to card */}
                 </div>

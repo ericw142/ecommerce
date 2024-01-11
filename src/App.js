@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import { ContentBody } from './views/ContentBody';
+import perfume from './products/daria-nepriakhina-bUjiFIn3PLk-unsplash.jpg'
 
 function App() {
     const [selectedView, setSelectedView] = useState('');
@@ -10,7 +11,14 @@ function App() {
             location: 'Baltimore, MD',
             storehours: 'Monday - Friday 9am to 5pm',
             address: '1234 Eutaw St',
-            products: [],
+            products: [
+                {
+                    imageUrl: perfume,
+                    imageAlt: "pink_perfume",
+                    name: "Pink Perfume",
+                    shortDescription: "Perfume that is pink."
+                }
+            ],
         },
         {
             location: 'Washington, D.C.',
