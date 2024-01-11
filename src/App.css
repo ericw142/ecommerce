@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 #content-header {
@@ -7,14 +8,22 @@
 }
 
 .content-body {
-    height: 80vh;
+    height: 85vh;
 }
 
 #content-footer {
-    height: 10vh;
+    height: 5vh;
     background: black;
 }
 
 .body-main-header {
     text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button-no-style {
+    color: white;
+    border: none;
+    background: none;
 }

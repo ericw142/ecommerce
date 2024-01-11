@@ -47,16 +47,16 @@ function App() {
             <div id="content-footer">
                 <div className='row'>
                     <div className='col'>
-                        <button onClick={() => setSelectedView('Locations')}>Locations</button>
+                        <button className="button-no-style mt-2" onClick={() => setSelectedView('Locations')}>Locations</button>
                     </div>
                     <div className='col'>
-                        <button onClick={() => setSelectedView('About')}>About</button>
+                        <button className="button-no-style mt-2" onClick={() => setSelectedView('About')}>About</button>
                     </div>
                     <div className='col'>
-                        <button onClick={() => setSelectedView('Careers')}>Careers</button>
+                        <button className="button-no-style mt-2" onClick={() => setSelectedView('Careers')}>Careers</button>
                     </div>
                     <div className='col'>
-                        <button onClick={() => setSelectedView('Contact')}>Contact</button>
+                        <button className="button-no-style mt-2" onClick={() => setSelectedView('Contact')}>Contact</button>
                     </div>
                 </div>
             </div>
