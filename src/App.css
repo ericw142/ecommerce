@@ -4,11 +4,12 @@
 }
 
 #content-header {
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .content-body {
-    height: 85vh;
+    /* height: 85vh; */
+    margin-bottom: 100px;
 }
 
 #content-footer {
@@ -19,12 +20,46 @@
     background: black;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0,0,0,0.9); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    border-radius: 10px;
+}
+  
+.hero-title {
+    padding-bottom: 0.25em;
+    word-wrap: break-word;
+}
+  
+.hero-text {
+    padding: 0 1em;
+}
+
 .body-main-header {
     text-transform: uppercase;
 }
 
 .site-title {
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .location-card {
