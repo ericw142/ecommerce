@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf00682f.css",
+    "main.js": "/static/js/main.b3b0e3d1.js",
+    "static/js/787.866a9283.chunk.js": "/static/js/787.866a9283.chunk.js",
+    "static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.jpg": "/static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.66aabdf829fdf5417e4d.jpg",
+    "static/media/freestocks-74ynifHQlPo-unsplash.jpg": "/static/media/freestocks-74ynifHQlPo-unsplash.09f17f7dd232d2d4c716.jpg",
+    "static/media/freestocks-yU296871lE8-unsplash.jpg": "/static/media/freestocks-yU296871lE8-unsplash.201f55ad6b64d4df8f35.jpg",
+    "static/media/freestocks-DlZD4V2j9oM-unsplash.jpg": "/static/media/freestocks-DlZD4V2j9oM-unsplash.7daf73047a2c0371d501.jpg",
+    "static/media/taylor-gregory-EFlp8BE4wIQ-unsplash.jpg": "/static/media/taylor-gregory-EFlp8BE4wIQ-unsplash.3ec650b8dccd60e15bbd.jpg",
+    "static/media/kristina-balic-M13V8hgvm-E-unsplash.jpg": "/static/media/kristina-balic-M13V8hgvm-E-unsplash.c095c21f96d295b59fc6.jpg",
+    "static/media/aurelia-dubois-6J0MUsmS4fQ-unsplash.jpg": "/static/media/aurelia-dubois-6J0MUsmS4fQ-unsplash.9efdb1767950e8c80f19.jpg",
+    "static/media/sincerely-media-UZm4Etsk6Go-unsplash.jpg": "/static/media/sincerely-media-UZm4Etsk6Go-unsplash.1cd230e4f324d2b7a2ea.jpg",
+    "static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.jpg": "/static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.372a5ef0fa08ccc00292.jpg",
+    "index.html": "/index.html",
+    "main.cf00682f.css.map": "/static/css/main.cf00682f.css.map",
+    "main.b3b0e3d1.js.map": "/static/js/main.b3b0e3d1.js.map",
+    "787.866a9283.chunk.js.map": "/static/js/787.866a9283.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf00682f.css",
+    "static/js/main.b3b0e3d1.js"
+  ]
+}
