@@ -45,11 +45,12 @@ export const ContentBody = ({ selectedView, setSelectedView, locations }) => {
                     </div>
                     <div className='row mt-5 mb-5'>
                         <div className='col'></div>
-                        <div className='col-6'>
+                        <div className='col-10'>
                             <p>
                                 Curious about the heart behind our brand? Discover more in the About section, where our passion for crafting indulgent soaps comes to life. If you're considering a career with us or simply wish to get in touch, 
                                 navigate to our Careers and Contact pages for more information. Your path to blissful bathing and exciting opportunities begins here – click, explore, and elevate your experience with us!
                             </p>
+                            <p>Note - this is an mock e-commerce webpage created by Eric Warshawsky. All images are sourced from <a href="https://unsplash.com/" target="_blank">Unsplash</a> Products shown are not available for purchase.</p>
                         </div>
                         <div className='col'></div>
                     </div>
