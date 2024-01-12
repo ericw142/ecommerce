@@ -23,6 +23,14 @@
     text-transform: uppercase;
 }
 
+.site-title {
+    cursor: pointer;
+}
+
+.location-card {
+    cursor: pointer;
+}
+
 /* Buttons */
 
 .button-site-header {

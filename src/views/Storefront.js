@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/ProductCard';
 
-export const Storefront = ({ locations }) => {
-    const [selectedStorefront, setSelectedStorefront] = useState('');
+export const Storefront = ({ locations, selectedStorefront, setSelectedStorefront }) => {
     const [storefront, setStorefront] = useState();
 
     const matchAndSetStorefront = () => {
         const matchingStorefront = locations.findIndex((el) => el.location === selectedStorefront);
         setStorefront(locations[matchingStorefront])
     }
+
+    useEffect(() => {
+        if (selectedStorefront) {
+            matchAndSetStorefront();
+        }
+    }, [])
 
     return (
         <div className='container mb-5'>
