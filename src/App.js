@@ -3,32 +3,10 @@ import { useState } from 'react';
 import { ContentBody } from './views/ContentBody';
 import { FaShop } from "react-icons/fa6";
 import { HiMiniHome, HiMiniShoppingCart } from "react-icons/hi2";
-import perfume from './products/daria-nepriakhina-bUjiFIn3PLk-unsplash.jpg'
+import locationData from './locationData';
 
 function App() {
     const [selectedView, setSelectedView] = useState('');
-
-    const locations = [
-        {
-            location: 'Baltimore, MD',
-            storehours: 'Monday - Friday 9am to 5pm',
-            address: '1234 Eutaw St',
-            products: [
-                {
-                    imageUrl: perfume,
-                    imageAlt: "pink_perfume",
-                    name: "Pink Perfume",
-                    shortDescription: "Perfume that is pink."
-                }
-            ],
-        },
-        {
-            location: 'Washington, D.C.',
-            storehours: 'Tuesday - Friday, 12pm to 7pm',
-            address: '987 Main St',
-            products: [],
-        }
-    ];
 
     return (
         <div className="App">
@@ -61,7 +39,7 @@ function App() {
             <ContentBody
                 selectedView={selectedView}
                 setSelectedView={setSelectedView}
-                locations={locations}
+                locations={locationData}
             />
             <div id="content-footer">
                 <div className='row'>

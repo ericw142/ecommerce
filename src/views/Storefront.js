@@ -11,7 +11,7 @@ export const Storefront = ({ locations }) => {
     }
 
     return (
-        <div className='container'>
+        <div className='container mb-5'>
             {!storefront ? (
                 <div>
                     <div className="row">
