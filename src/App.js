@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 import { ContentBody } from './views/ContentBody';
+import { FaShop } from "react-icons/fa6";
+import { HiMiniHome, HiMiniShoppingCart } from "react-icons/hi2";
 import perfume from './products/daria-nepriakhina-bUjiFIn3PLk-unsplash.jpg'
 
 function App() {
@@ -33,16 +35,25 @@ function App() {
             <div id="content-header">
                 <div className='row'>
                     <div className='col-2'>
-                        <button onClick={() => setSelectedView('')}>Home</button>
+                        <button className='button-site-header mx-auto' onClick={() => setSelectedView('')}>
+                            <div><HiMiniHome /></div>
+                            <p>Home</p>
+                        </button>
                     </div>
                     <div className='col-8'>
-                        <h1 onClick={() => setSelectedView('')}>ShopSite</h1>
+                        <h1>ShopSite</h1>
                     </div>
                     <div className='col-2'>
                         {selectedView === 'Storefront' ? (
-                            <button onClick={() => setSelectedView('Cart')}>Cart</button>
+                            <button className='button-site-header mx-auto' onClick={() => setSelectedView('Cart')}>
+                                <div><HiMiniShoppingCart /></div>
+                                <p>Cart</p>
+                            </button>
                         ) : (
-                            <button onClick={() => setSelectedView('Storefront')}>Store</button>
+                            <button className='button-site-header mx-auto' onClick={() => setSelectedView('Storefront')}>
+                                <div><FaShop /></div>
+                                <p>Store</p>
+                            </button>
                         )}
                     </div>
                 </div>

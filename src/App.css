@@ -22,6 +22,14 @@
 
 /* Buttons */
 
+.button-site-header {
+    border: none;
+    background: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .button-no-style {
     color: white;
     border: none;
