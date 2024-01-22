@@ -7,6 +7,7 @@ import locationData from './locationData';
 
 function App() {
     const [selectedView, setSelectedView] = useState('');
+    const [cart, setCart] = useState({ products: [] });
 
     return (
         <div className="App">
@@ -40,6 +41,8 @@ function App() {
                 selectedView={selectedView}
                 setSelectedView={setSelectedView}
                 locations={locationData}
+                cart={cart}
+                setCart={setCart}
             />
             <div id="content-footer">
                 <div className='row'>

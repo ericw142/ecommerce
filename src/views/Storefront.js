@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/ProductCard';
 import { ProductModal } from '../components/ProductModal';
 
-export const Storefront = ({ locations, selectedStorefront, setSelectedStorefront }) => {
+export const Storefront = ({ locations, selectedStorefront, setSelectedStorefront, cart, setCart }) => {
     const [storefront, setStorefront] = useState();
     const [showModal, setShowModal] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({});
@@ -20,7 +20,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
 
     return (
         <div className='container mb-5'>
-            <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal}/>
+            <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal} setCart={setCart}/>
             {!storefront ? (
                 <div>
                     <div className="row">

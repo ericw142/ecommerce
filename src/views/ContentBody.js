@@ -7,15 +7,15 @@ import { Storefront } from './Storefront';
 import { Cart } from './Cart';
 import heroImage from '../paul-gaudriault-TVxI-vkmTLI-unsplash.jpg';
 
-export const ContentBody = ({ selectedView, setSelectedView, locations }) => {
+export const ContentBody = ({ selectedView, setSelectedView, locations, cart, setCart }) => {
     const [selectedStorefront, setSelectedStorefront] = useState('');
 
     return (
         <div className="content-body">
             {selectedView === 'Storefront' ? (
-                <Storefront locations={locations} selectedStorefront={selectedStorefront} setSelectedStorefront={setSelectedStorefront} />
+                <Storefront locations={locations} selectedStorefront={selectedStorefront} setSelectedStorefront={setSelectedStorefront} cart={cart} setCart={setCart} />
             ) : selectedView === 'Cart' ? (
-                <Cart />
+                <Cart cart={cart} setCart={setCart} />
             ) : selectedView === 'Locations' ? (
                 <Locations locations={locations} setSelectedView={setSelectedView} setSelectedStorefront={setSelectedStorefront} />
             ) : selectedView === 'About' ? (
