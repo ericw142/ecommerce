@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../components/ProductCard';
+import { ProductModal } from '../components/ProductModal';
 
 export const Storefront = ({ locations, selectedStorefront, setSelectedStorefront }) => {
     const [storefront, setStorefront] = useState();
+    const [showModal, setShowModal] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState({});
 
     const matchAndSetStorefront = () => {
         const matchingStorefront = locations.findIndex((el) => el.location === selectedStorefront);
@@ -17,6 +20,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
 
     return (
         <div className='container mb-5'>
+            <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal}/>
             {!storefront ? (
                 <div>
                     <div className="row">
@@ -44,7 +48,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
                     {/* display product cards */}
                     <div className='row'>
                         {storefront.products.map((el) => {
-                            return <ProductCard product={el}/>
+                            return <ProductCard product={el} setShowModal={setShowModal} setSelectedProduct={setSelectedProduct} />
                         })}
                     </div>
 
