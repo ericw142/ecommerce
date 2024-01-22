@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce/static/css/main.cf00682f.css",
-    "main.js": "/ecommerce/static/js/main.ff104b06.js",
+    "main.css": "/ecommerce/static/css/main.7082b778.css",
+    "main.js": "/ecommerce/static/js/main.e114df90.js",
     "static/js/787.866a9283.chunk.js": "/ecommerce/static/js/787.866a9283.chunk.js",
     "static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.jpg": "/ecommerce/static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.66aabdf829fdf5417e4d.jpg",
     "static/media/freestocks-74ynifHQlPo-unsplash.jpg": "/ecommerce/static/media/freestocks-74ynifHQlPo-unsplash.09f17f7dd232d2d4c716.jpg",
@@ -13,12 +13,12 @@
     "static/media/sincerely-media-UZm4Etsk6Go-unsplash.jpg": "/ecommerce/static/media/sincerely-media-UZm4Etsk6Go-unsplash.1cd230e4f324d2b7a2ea.jpg",
     "static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.jpg": "/ecommerce/static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.372a5ef0fa08ccc00292.jpg",
     "index.html": "/ecommerce/index.html",
-    "main.cf00682f.css.map": "/ecommerce/static/css/main.cf00682f.css.map",
-    "main.ff104b06.js.map": "/ecommerce/static/js/main.ff104b06.js.map",
+    "main.7082b778.css.map": "/ecommerce/static/css/main.7082b778.css.map",
+    "main.e114df90.js.map": "/ecommerce/static/js/main.e114df90.js.map",
     "787.866a9283.chunk.js.map": "/ecommerce/static/js/787.866a9283.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf00682f.css",
-    "static/js/main.ff104b06.js"
+    "static/css/main.7082b778.css",
+    "static/js/main.e114df90.js"
   ]
 }
