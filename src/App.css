@@ -62,8 +62,13 @@
     margin-top: 10px;
 }
 
+.locations-row {
+}
+
 .location-card {
     cursor: pointer;
+    border: none;
+    padding: 2em 0;
 }
 
 /* Buttons */

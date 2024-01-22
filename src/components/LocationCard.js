@@ -2,7 +2,7 @@ import React from 'react';
 
 export const LocationCard = ({ location, storehours, address, setSelectedView, setSelectedStorefront }) => {
     return (
-        <div className='col'>
+        <div className='col-12 col-md-6'>
             <div className='location-card card' onClick={() => {
                 setSelectedView('Storefront');
                 setSelectedStorefront(location);

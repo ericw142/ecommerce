@@ -38,7 +38,9 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
             ) : (
                 <div>
                     {/* display top row with search, storefront select, filter options */}
-          
+                    <div className='row'>
+                        <h6>{selectedStorefront}</h6>
+                    </div>
                     {/* display product cards */}
                     <div className='row'>
                         {storefront.products.map((el) => {
