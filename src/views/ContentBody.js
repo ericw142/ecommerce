@@ -30,7 +30,7 @@ export const ContentBody = ({ selectedView, setSelectedView, locations, cart, se
                         <div className='col'>
                             <div className="image-container">
                                 <img src={heroImage} alt=""></img>
-                                <div className='overlay-text'></div>
+                                {/* <div className='overlay-text'></div> */}
                             </div>
                         </div>
                     </div>
