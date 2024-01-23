@@ -1,7 +1,21 @@
 import React from 'react';
 
 export const Cart = ({ cart, setCart }) => {
-    const productList = cart?.products?.map((product) => {
+    const distinctProducts = [];
+    if (cart.products) {
+        for (let i = 0; i < cart.products.length; i++) {
+            const prod = cart.products[i];
+            const matchingProduct = distinctProducts.findIndex((el) => el.name === prod.name);
+
+            if (matchingProduct !== -1) {
+                distinctProducts[matchingProduct].count++;
+            } else {
+                distinctProducts.push({name: prod.name, count: 1, price: prod.price});
+            }
+       }
+    }
+
+    const productList = distinctProducts.map((product) => {
         return (
             <li className='cart-product-list-item'>
                 <div className='row'>
@@ -9,7 +23,13 @@ export const Cart = ({ cart, setCart }) => {
                         <p>{product.name}</p>
                     </div>
                     <div className='col'>
-                        <p>{product.price}</p>
+                        <p>{product.count} bar{product.count > 1 ? 's' : ''} of soap</p>
+                    </div>
+                    <div className='col'>
+                        <p>${product.price * product.count} (${product.price} x {product.count})</p>
+                    </div>
+                    <div className='col'>
+                        <button className='btn btn-outline-secondary'>X</button>
                     </div>
                 </div>
             </li>

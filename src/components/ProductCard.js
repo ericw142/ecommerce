@@ -15,7 +15,7 @@ export const ProductCard = ({ product, setShowModal, setSelectedProduct }) => {
                 <div className="card-body p-0"><img src={product.imageUrl} alt={product.imageAlt} className="img-fluid d-block mx-auto mb-3"/>
                     <h5><a onClick={() => displayProductModal(product)} href="#" className="text-dark">{product.name}</a></h5>
                     <p className="small text-muted font-italic">{product.shortDescription}</p>
-                    <p className='m-0 pb-4'>{product.price}</p>
+                    <p className='m-0 pb-4'>${product.price}</p>
                 </div>
             </div>
         </div>
