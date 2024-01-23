@@ -98,7 +98,7 @@
     height: 385px;
 }
 
-.cart-product-list li::marker {
+.list-no-marker li::marker {
     content: '';
 }
 

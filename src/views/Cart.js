@@ -61,7 +61,7 @@ export const Cart = ({ cart, setCart }) => {
                     ) : (
                         <div>
                             <h3><strong>Your Cart</strong></h3>
-                            <ul className='cart-product-list'>
+                            <ul className='list-no-marker'>
                                 {productList}
                             </ul>
                         </div>
