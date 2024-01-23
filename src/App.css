@@ -23,12 +23,20 @@
 .image-container {
     position: relative;
     display: inline-block;
+    /* background-color: rgba(0,0,0,0.8); */
+    width: 100vw;
+    height: 800px;
+    text-align: center;
 }
 
 .image-container img {
-    display: block;
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 90%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .overlay-text {
@@ -38,8 +46,8 @@
     transform: translate(-50%, -50%); 
     background-color: rgba(0,0,0,0.9); 
     color: #fff; 
-    padding: 10px 20px; 
-    font-size: 20px; 
+    padding: 5px 10px; 
+    font-size: 16px; 
     text-align: center;
     border-radius: 10px;
 }
@@ -47,6 +55,7 @@
 .hero-title {
     padding-bottom: 0.25em;
     word-wrap: break-word;
+    text-align: center;
 }
   
 .hero-text {
@@ -102,4 +111,14 @@
 .cart-product-list-item p {
     margin-bottom: 0;
     font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    /* .overlay-text .hero-text {
+        display: none;
+    }
+
+    .overlay-text hr {
+        display: none;
+    } */
 }
