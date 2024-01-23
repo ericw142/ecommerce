@@ -23,7 +23,7 @@ export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) 
                 <Modal.Title>{selectedProduct.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <img src={selectedProduct.imageUrl} alt={selectedProduct.imageAlt} class="img-fluid d-block mx-auto mb-3"/>
+                <img src={selectedProduct.imageUrl} alt={selectedProduct.imageAlt} className="img-fluid d-block mx-auto mb-3"/>
                 {selectedProduct.longDescription}
                 <div className='row mt-4'>
                     <div className='col'>

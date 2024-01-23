@@ -20,7 +20,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
 
     return (
         <div className='container mb-5'>
-            <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal} setCart={setCart}/>
+            <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal} cart={cart} setCart={setCart}/>
             {!storefront ? (
                 <div>
                     <div className="row">

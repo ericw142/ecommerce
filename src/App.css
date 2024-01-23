@@ -71,8 +71,6 @@
     padding: 2em 0;
 }
 
-/* Buttons */
-
 .button-site-header {
     border: none;
     background: none;
@@ -85,4 +83,20 @@
     color: white;
     border: none;
     background: none;
+}
+
+.cart-product-list li::marker {
+    content: '';
+}
+
+.cart-product-list-item {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    text-align: start;
+}
+
+.cart-product-list-item p {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 18px;
 }

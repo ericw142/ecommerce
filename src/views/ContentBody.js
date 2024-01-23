@@ -31,14 +31,14 @@ export const ContentBody = ({ selectedView, setSelectedView, locations, cart, se
                             <div className="image-container">
                                 <img src={heroImage} alt=""></img>
                                 <div className='overlay-text'>
-                                    <h1 class="hero-title">Luxurious Soaps for a Blissful Bathing Experience</h1>
-                                    <p class="hero-text">
+                                    <h1 className="hero-title">Luxurious Soaps for a Blissful Bathing Experience</h1>
+                                    <p className="hero-text">
                                         Indulge in the epitome of self-care with our exquisite collection of handcrafted soaps. Each bar is a work of art, meticulously crafted to elevate your daily bathing routine into a sensorial journey. 
                                         Immerse yourself in nature-inspired scents, from the calming Lavender Blossom to the energizing Citrus Serenade. Our soaps are more than just cleansing agents, they're a luxurious escape, a treat for your skin, 
                                         and a celebration of the small moments that bring joy to your day.
                                     </p>
                                     <hr />
-                                    <p class="hero-text">Our soaps are crafted with care, using only the finest ingredients to provide your skin with the love and attention it deserves.</p>
+                                    <p className="hero-text">Our soaps are crafted with care, using only the finest ingredients to provide your skin with the love and attention it deserves.</p>
                                 </div>
                             </div>
                         </div>
