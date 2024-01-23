@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal } from 'react-bootstrap';
 
 export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) => {
     const maxItemsPer = 10;
-    const [amountToAdd, setAmountToAdd] = useState(1)
+    const [amountToAdd, setAmountToAdd] = useState(1);
+    const [displaySuccess, setDisplaySuccess] = useState(false);
     
+    useEffect(() => {
+        if (displaySuccess) {
+            setTimeout(() => {
+                setDisplaySuccess(false);
+            }, 5000);
+        }
+    }, [displaySuccess]);
+
     const handleClose = () => {
         setShow(false);
     }
@@ -15,6 +24,8 @@ export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) 
         for (let i = 0; i < amountToAdd; i++) tempProducts.push(selectedProduct);
 
         setCart({ products: tempProducts });
+
+        setDisplaySuccess(true);
     }
 
     return (
@@ -35,6 +46,13 @@ export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) 
                         <button className='btn btn-outline-secondary' onClick={handleAddToCart}>Add to cart</button>
                     </div>
                 </div>
+                {displaySuccess && (
+                    <div className='row mt-2'>
+                        <div className='col text-center'>
+                            <p className='text-success m-0'>Successfully added to cart!</p>
+                        </div>
+                    </div>
+                )}
             </Modal.Body>
       </Modal>
     )

@@ -20,7 +20,7 @@ export const Cart = ({ cart, setCart }) => {
             <li className='cart-product-list-item'>
                 <div className='row'>
                     <div className='col'>
-                        <p>{product.name}</p>
+                        <p style={{fontWeight: '600'}}>{product.name}</p>
                     </div>
                     <div className='col'>
                         <p>{product.count} bar{product.count > 1 ? 's' : ''} of soap</p>
