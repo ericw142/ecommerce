@@ -1,6 +1,19 @@
 import React from 'react';
 
 export const Cart = ({ cart, setCart }) => {
+    const handleRemoveProductByName = (name) => {
+        let temp = [...cart.products];
+        let i = 0;
+        while (i < temp.length) {
+            if (temp[i].name === name) {
+                temp.splice(i, 1);
+            } else {
+                ++i;
+            }
+        }
+        setCart({...cart, products: temp });
+    }
+
     const distinctProducts = [];
     if (cart.products) {
         for (let i = 0; i < cart.products.length; i++) {
@@ -29,12 +42,13 @@ export const Cart = ({ cart, setCart }) => {
                         <p>${product.price * product.count} (${product.price} x {product.count})</p>
                     </div>
                     <div className='col'>
-                        <button className='btn btn-outline-secondary'>X</button>
+                        <button className='btn btn-outline-dark' onClick={() => {handleRemoveProductByName(product.name)}}>X</button>
                     </div>
                 </div>
             </li>
         )
-    })
+    });
+
     return (
         <div className='container'>
             <div className='row mt-5'>

@@ -15,6 +15,7 @@ export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) 
     }, [displaySuccess]);
 
     const handleClose = () => {
+        setDisplaySuccess(false);
         setShow(false);
     }
 
@@ -38,12 +39,12 @@ export const ProductModal = ({ selectedProduct, show, setShow, cart, setCart }) 
                 {selectedProduct.longDescription}
                 <div className='row mt-4'>
                     <div className='col'>
-                        <select className='form-select' onChange={(e) => {setAmountToAdd(e.currentTarget.value)}}>
+                        <select style={{maxWidth: '80px', marginLeft: 'auto'}} className='form-select' onChange={(e) => {setAmountToAdd(e.currentTarget.value)}}>
                             {[...Array(maxItemsPer)].map((e, i) => <option value={i+1}>{i+1}</option>)}
                         </select>
                     </div>
-                    <div className='col text-center'>
-                        <button className='btn btn-outline-secondary' onClick={handleAddToCart}>Add to cart</button>
+                    <div className='col'>
+                        <button style={{marginRight: 'auto'}} className='btn btn-outline-success' onClick={handleAddToCart}>Add to cart</button>
                     </div>
                 </div>
                 {displaySuccess && (

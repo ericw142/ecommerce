@@ -85,6 +85,10 @@
     background: none;
 }
 
+.product-card {
+    height: 385px;
+}
+
 .cart-product-list li::marker {
     content: '';
 }
