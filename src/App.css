@@ -34,9 +34,15 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    width: auto;
-    height: 90%;
+}
+
+.box-shadow {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.flex-col-reverse {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .overlay-text {
@@ -49,6 +55,12 @@
     padding: 5px 10px; 
     font-size: 16px; 
     text-align: center;
+    border-radius: 10px;
+}
+
+.carousel-caption-bg {
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
     border-radius: 10px;
 }
   
