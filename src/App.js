@@ -20,7 +20,7 @@ function App() {
                         </button>
                     </div>
                     <div className='col-8'>
-                        <h1 className='site-title' onClick={() => setSelectedView('')}>Soap Store</h1>
+                        <h1 className='site-title' onClick={() => setSelectedView('')}>Ecommerce Site</h1>
                     </div>
                     <div className='col-2'>
                         {selectedView === 'Storefront' ? (

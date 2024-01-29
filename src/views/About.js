@@ -2,9 +2,9 @@ import React from 'react';
 
 export const About = () => {
     return (
-        <div className='content-body'>
+        <div className='content-body' style={{marginTop: '100px'}}>
             <div className='container'>
-                <div className='mt-5' style={{textAlign: 'start'}}>
+                <div className='mt-5 text-start'>
                     <h2 className='body-main-header'>about us</h2>
                     <p>Established in 2024, based in the D.C. - Baltimore area</p>
                     <p>
