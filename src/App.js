@@ -26,7 +26,7 @@ function App() {
                         {selectedView === 'Storefront' ? (
                             <button className='button-site-header mx-auto' onClick={() => setSelectedView('Cart')}>
                                 <div><HiMiniShoppingCart /></div>
-                                <p>Cart</p>
+                                <p>Cart <span className='cart-items-indicator'>{cart?.products?.length > 0 ? `( ${cart.products.length} )` : ''}</span></p>
                             </button>
                         ) : (
                             <button className='button-site-header mx-auto' onClick={() => setSelectedView('Storefront')}>

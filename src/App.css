@@ -63,6 +63,7 @@
     background-color: rgba(0,0,0,0.9);
     color: #fff;
     border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
   
 .hero-title {
@@ -131,12 +132,12 @@
     font-size: 18px;
 }
 
+.cart-items-indicator {
+    font-size: 14px;
+}
+
 @media (max-width: 800px) {
-    /* .overlay-text .hero-text {
+    .carousel-caption-bg {
         display: none;
     }
-
-    .overlay-text hr {
-        display: none;
-    } */
 }
