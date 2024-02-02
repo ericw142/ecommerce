@@ -10,7 +10,13 @@ function App() {
     const [cart, setCart] = useState({ products: [] });
 
     return (
-        <div className="App">
+        <div className={
+            selectedView === 'Locations' ? "App animated-bg" : 
+            selectedView === 'About' ? 'App animated-bg' :
+            selectedView === 'Careers' ? 'App animated-bg' :
+            selectedView === 'Contact' ? 'App animated-bg' 
+            : "App"
+        }>
             <div id="content-header">
                 <div className='row'>
                     <div className='col-2'>
