@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce/static/css/main.2f0af546.css",
-    "main.js": "/ecommerce/static/js/main.8ced085d.js",
+    "main.css": "/ecommerce/static/css/main.00b3d72f.css",
+    "main.js": "/ecommerce/static/js/main.a6511a1f.js",
     "static/js/787.866a9283.chunk.js": "/ecommerce/static/js/787.866a9283.chunk.js",
     "static/media/heather-ford-FbrDS0jY_Hw-unsplash.jpg": "/ecommerce/static/media/heather-ford-FbrDS0jY_Hw-unsplash.a3d7d75d122a02fda8f5.jpg",
     "static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.jpg": "/ecommerce/static/media/paul-gaudriault-TVxI-vkmTLI-unsplash.66aabdf829fdf5417e4d.jpg",
@@ -14,12 +14,12 @@
     "static/media/sincerely-media-UZm4Etsk6Go-unsplash.jpg": "/ecommerce/static/media/sincerely-media-UZm4Etsk6Go-unsplash.1cd230e4f324d2b7a2ea.jpg",
     "static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.jpg": "/ecommerce/static/media/towfiqu-barbhuiya-Z5eQ1DTenTo-unsplash.372a5ef0fa08ccc00292.jpg",
     "index.html": "/ecommerce/index.html",
-    "main.2f0af546.css.map": "/ecommerce/static/css/main.2f0af546.css.map",
-    "main.8ced085d.js.map": "/ecommerce/static/js/main.8ced085d.js.map",
+    "main.00b3d72f.css.map": "/ecommerce/static/css/main.00b3d72f.css.map",
+    "main.a6511a1f.js.map": "/ecommerce/static/js/main.a6511a1f.js.map",
     "787.866a9283.chunk.js.map": "/ecommerce/static/js/787.866a9283.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f0af546.css",
-    "static/js/main.8ced085d.js"
+    "static/css/main.00b3d72f.css",
+    "static/js/main.a6511a1f.js"
   ]
 }
