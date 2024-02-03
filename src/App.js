@@ -24,7 +24,7 @@ function App() {
                 cart={cart}
                 setCart={setCart}
             />
-            <div id="content-footer">
+            {/* <div id="content-footer">
                 <div className='row'>
                     <div className='col'>
                         <button className="button-no-style mt-2" onClick={() => setSelectedView('Locations')}>Locations</button>
@@ -39,7 +39,7 @@ function App() {
                         <button className="button-no-style mt-2" onClick={() => setSelectedView('Contact')}>Contact</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
