@@ -124,7 +124,7 @@
 }
 
 .product-card {
-    height: 385px;
+    min-height: 385px;
 }
 
 .list-no-marker li::marker {
