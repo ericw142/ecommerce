@@ -1,9 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 import { ContentBody } from './views/ContentBody';
-import { FaShop } from "react-icons/fa6";
-import { HiMiniHome, HiMiniShoppingCart } from "react-icons/hi2";
 import locationData from './locationData';
+import { TopNavbar } from './components/TopNavbar';
 
 function App() {
     const [selectedView, setSelectedView] = useState('');
@@ -17,32 +16,7 @@ function App() {
             selectedView === 'Contact' ? 'App animated-bg' 
             : "App"
         }>
-            <div id="content-header">
-                <div className='row'>
-                    <div className='col-2'>
-                        <button className='button-site-header mx-auto' onClick={() => setSelectedView('')}>
-                            <div><HiMiniHome /></div>
-                            <p>Home</p>
-                        </button>
-                    </div>
-                    <div className='col-8'>
-                        <h1 className='site-title' onClick={() => setSelectedView('')}>Ecommerce Site</h1>
-                    </div>
-                    <div className='col-2'>
-                        {selectedView === 'Storefront' ? (
-                            <button className='button-site-header mx-auto' onClick={() => setSelectedView('Cart')}>
-                                <div><HiMiniShoppingCart /></div>
-                                <p>Cart <span className='cart-items-indicator'>{cart?.products?.length > 0 ? `( ${cart.products.length} )` : ''}</span></p>
-                            </button>
-                        ) : (
-                            <button className='button-site-header mx-auto' onClick={() => setSelectedView('Storefront')}>
-                                <div><FaShop /></div>
-                                <p>Store</p>
-                            </button>
-                        )}
-                    </div>
-                </div>
-            </div>
+            <TopNavbar selectedView={selectedView} setSelectedView={setSelectedView} cart={cart}/>
             <ContentBody
                 selectedView={selectedView}
                 setSelectedView={setSelectedView}
