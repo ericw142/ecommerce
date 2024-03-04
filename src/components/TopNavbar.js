@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaShop } from "react-icons/fa6";
 import { HiMiniShoppingCart } from "react-icons/hi2";
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 export const TopNavbar = ({ selectedView, setSelectedView, cart }) => {
     return (

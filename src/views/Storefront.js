@@ -16,7 +16,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
         if (selectedStorefront) {
             matchAndSetStorefront();
         }
-    }, [selectedStorefront]);
+    }, [selectedStorefront, matchAndSetStorefront]);
 
     return (
         <div className='container mb-5' style={{marginTop: '100px'}}>

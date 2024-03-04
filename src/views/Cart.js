@@ -50,13 +50,13 @@ export const Cart = ({ cart, setCart }) => {
     });
 
     return (
-        <div className='container'>
+        <div className='container' style={{marginTop: '100px'}}>
             <div className='row mt-5'>
                 <div className='col'>
                     {cart?.products?.length === 0 ? (
                         <div>
                             <h3><strong>Your Cart is empty</strong></h3>
-                            <p>Your shopping cart is ready. Pick out some soap, check out our <a>recommendations</a>, and reach out if you have any questions!</p>
+                            <p>Your shopping cart is ready. Pick out some soap, check out our <button className='button-link'>recommendations</button>, and reach out if you have any questions!</p>
                         </div>
                     ) : (
                         <div>
