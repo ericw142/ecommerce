@@ -14,7 +14,7 @@ import heroImage3 from '../carousel-images/heather-ford-FbrDS0jY_Hw-unsplash.jpg
 const images = [
     {
         description: 'Indulge in the epitome of self-care with our exquisite collection of handcrafted soaps. Each bar of soap meticulously crafted to elevate your daily bathing routine.',
-        src: heroImage1
+        src: heroImage3
     },
     {
         description: 'Immerse yourself in nature-inspired scents, from the calming Lavender Blossom to the energizing Citrus Serenade.',
@@ -22,7 +22,7 @@ const images = [
     },
     {
         description: "Our soaps are more than just cleansing agents, they're a luxurious escape, a treat for your skin, and a celebration of the small moments that bring joy to your day.",
-        src: heroImage3,
+        src: heroImage1,
     },
 ];
 
