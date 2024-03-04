@@ -19,7 +19,7 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
     }, [selectedStorefront]);
 
     return (
-        <div className='container mb-5'>
+        <div className='container mb-5' style={{marginTop: '100px'}}>
             <ProductModal selectedProduct={selectedProduct} show={showModal} setShow={setShowModal} cart={cart} setCart={setCart}/>
             {!storefront ? (
                 <div className='content-body' style={{marginTop: '100px'}}>
