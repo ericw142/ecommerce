@@ -11,6 +11,10 @@
 .site-navbar {
     background-color: black;
     padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
 }
 
 .site-navbar .navbar-toggler-icon {
