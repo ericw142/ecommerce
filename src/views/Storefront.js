@@ -7,16 +7,12 @@ export const Storefront = ({ locations, selectedStorefront, setSelectedStorefron
     const [showModal, setShowModal] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState({});
 
-    const matchAndSetStorefront = () => {
-        const matchingStorefront = locations.findIndex((el) => el.location === selectedStorefront);
-        setStorefront(locations[matchingStorefront])
-    }
-
     useEffect(() => {
         if (selectedStorefront) {
-            matchAndSetStorefront();
+            const matchingStorefront = locations.findIndex((el) => el.location === selectedStorefront);
+            setStorefront(locations[matchingStorefront])
         }
-    }, [selectedStorefront, matchAndSetStorefront]);
+    }, [selectedStorefront, locations]);
 
     return (
         <div className='container mb-5' style={{marginTop: '100px'}}>
