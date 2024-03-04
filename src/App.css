@@ -78,8 +78,13 @@
     border-radius: 10px;
 }
 
+.carousel {
+    width: auto;
+    height: auto;
+}
+
 .carousel-caption-bg {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;

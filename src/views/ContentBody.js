@@ -62,18 +62,7 @@ export const ContentBody = ({ selectedView, setSelectedView, locations, cart, se
                                 </Carousel>
                         </div>
                     </div>
-                    {/* <div className='row'>
-                        <div className='col p-5' style={{textAlign: 'start'}}>
-                            <h1 className="hero-title">Luxurious Soaps for a Blissful Bathing Experience</h1>
-                            <p>
-                                Indulge in the epitome of self-care with our exquisite collection of handcrafted soaps. Each bar is a work of art, meticulously crafted to elevate your daily bathing routine. 
-                                Immerse yourself in nature-inspired scents, from the calming Lavender Blossom to the energizing Citrus Serenade. Our soaps are more than just cleansing agents, they're a luxurious escape, a treat for your skin, 
-                                and a celebration of the small moments that bring joy to your day.
-                            </p>
-                            <hr />
-                            <p>Our soaps are crafted with care, using only the finest ingredients to provide your skin with the love and attention it deserves.</p>
-                        </div>
-                    </div> */}
+
                     <div className='row'>
                         <div className='col p-5' style={{textAlign: 'start'}}>
                             <p>
