@@ -1,23 +1,10 @@
 import React from 'react';
 import { LocationCard } from '../components/LocationCard';
-import GoogleMapReact from 'google-map-react';
+import { GoogleMap } from '../components/GoogleMap';
 
 export const Locations = ({ locations, setSelectedView, setSelectedStorefront }) => {
-    const MapLabel = ({ text }) => (
-        <div style={{
-          color: 'white', 
-          background: 'grey',
-          padding: '15px 10px',
-          display: 'inline-flex',
-          textAlign: 'center',
-          alignItems: 'center',
-          justifyContent: 'center',
-          borderRadius: '100%',
-          transform: 'translate(-50%, -50%)'
-        }}>
-          {text}
-        </div>
-    );
+    const baltimore = { lat: 39.290379405576644, lng: -76.61367725716757 };
+    const dc = { lat: 38.90735205826721, lng: -77.0327748451837 };
 
     return (
         <div className='content-body container' style={{marginTop: '100px'}}>
@@ -28,26 +15,12 @@ export const Locations = ({ locations, setSelectedView, setSelectedStorefront })
                     return <LocationCard location={el.location} storehours={el.storehours} address={el.address} setSelectedView={setSelectedView} setSelectedStorefront={setSelectedStorefront}/>
                 })}
             </div>
-            <div className='row'>
-                <div className='col' style={{ height: '100vh', width: '100%' }}>
-                    map of baltimore
-                    <GoogleMapReact
-                        bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_APIKEY }}
-                        defaultCenter={{
-                            lat: 10.99835602,
-                            lng: 77.01502627
-                          }}
-                        defaultZoom={11}
-                    >
-                        <MapLabel
-                            lat={59.955413}
-                            lng={30.337844}
-                            text={'Kreyser Avrora'}
-                        />
-                    </GoogleMapReact>
+            <div className='row mt-3'>
+                <div className='col'>
+                    <GoogleMap lat={baltimore.lat} lng = {baltimore.lng}/>
                 </div>
                 <div className='col'>
-                    map of dc
+                    <GoogleMap lat={dc.lat} lng = {dc.lng}/>
                 </div>
             </div>
         </div>
