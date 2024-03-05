@@ -16,10 +16,10 @@ export const Locations = ({ locations, setSelectedView, setSelectedStorefront })
                 })}
             </div>
             <div className='row mt-3'>
-                <div className='col'>
+                <div className='d-none d-sm-block col-6'>
                     <GoogleMap lat={baltimore.lat} lng = {baltimore.lng}/>
                 </div>
-                <div className='col'>
+                <div className='d-none d-sm-block col-6'>
                     <GoogleMap lat={dc.lat} lng = {dc.lng}/>
                 </div>
             </div>

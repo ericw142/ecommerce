@@ -51,7 +51,7 @@ export const ContentBody = ({ selectedView, setSelectedView, locations, cart, se
                                     {images.map((image) => {
                                         return (
                                             <Carousel.Item>
-                                                <img className='carousel-image' height="800px" width="100%" src={image.src} alt=""></img>
+                                                <img className='carousel-image' src={image.src} alt=""></img>
                                                 <Carousel.Caption className='carousel-caption-bg'>
                                                     <h3 className="hero-title">Luxurious Soaps for a Blissful Bathing Experience</h3>
                                                     <p>{image.description}</p>

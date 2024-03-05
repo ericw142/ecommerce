@@ -8,7 +8,7 @@ export const LocationCard = ({ location, storehours, address, setSelectedView, s
                 setSelectedStorefront(location);
             }}>
                 <p style={{fontSize: '28px'}}><strong>{location}</strong></p>
-                <p style={{fontSize: '18px'}}>{storehours}</p>
+                <p className='mb-0' style={{fontSize: '18px'}}>{storehours}</p>
                 <p style={{fontSize: '18px'}}>{address}</p>
             </div>
         </div>
