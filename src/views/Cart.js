@@ -1,6 +1,8 @@
 import React from 'react';
 
 export const Cart = ({ cart, setCart }) => {
+    let total = 0;
+
     const handleRemoveProductByName = (name) => {
         let temp = [...cart.products];
         let i = 0;
@@ -18,6 +20,8 @@ export const Cart = ({ cart, setCart }) => {
     if (cart.products) {
         for (let i = 0; i < cart.products.length; i++) {
             const prod = cart.products[i];
+            total += prod.price;
+
             const matchingProduct = distinctProducts.findIndex((el) => el.name === prod.name);
 
             if (matchingProduct !== -1) {
@@ -64,6 +68,7 @@ export const Cart = ({ cart, setCart }) => {
                             <ul className='list-no-marker'>
                                 {productList}
                             </ul>
+                            <p>{total ? 'total: $'+(Math.round(total * 100) / 100).toFixed(2) : ''}</p>
                         </div>
                     )}
                 </div>
